@@ -3,7 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/drawable/after_liked.xml" value="0.305" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/drawable/alarm_ic.xml" value="0.305" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/drawable/before_liked.xml" value="0.305" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/drawable/calendar_ic.xml" value="0.305" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/drawable/calendar_ic2fix.xml" value="0.305" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/drawable/diary_icfix.xml" value="0.305" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/drawable/todo_ic.xml" value="0.305" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_calendar_view_with_notes.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_calendar_view_with_notes_sdk.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_calendar_view_with_notes_sdk2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_comments.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_community.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_community_button.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_create_event.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_diary_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_edit_alarm.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_select_date_and_time.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_set_up.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_set_up2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_show.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_sign_in.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_sign_up.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/activity_to_do_list.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/dialog_select_color.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/layout/update_food_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/USER/Desktop/android_projects_coll/App_Project_Final-summer--master/app/src/main/res/drawable/splash_background.xml" value="0.21041666666666667" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/summer-final-re-master/CalendarViewLib/src/main/res/layout/xml_calendar.xml" value="0.21739130434782608" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/summer-final-re-master/CalendarViewLib/src/main/res/layout/xml_calendar_container.xml" value="0.21739130434782608" />

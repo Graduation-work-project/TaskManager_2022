@@ -7,15 +7,6 @@
     android:background="@color/gray2"
     tools:context=".ToDoList">
 
-    <!--<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ToDoList"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true"
-        />-->
-
     <TextView
         android:id="@+id/tasksText"
         android:layout_width="wrap_content"

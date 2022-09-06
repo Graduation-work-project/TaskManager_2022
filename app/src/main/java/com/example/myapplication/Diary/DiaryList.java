@@ -202,7 +202,7 @@ public class DiaryList extends AppCompatActivity {
                             }
 
                             //수정 화면
-                            setContentView(R.layout.update_food_activity);
+                            setContentView(R.layout.update_activity);
 
                             //데이터 전체 가져오기
                             com.example.myapplication.Diary.Diary update = list.get(position);
