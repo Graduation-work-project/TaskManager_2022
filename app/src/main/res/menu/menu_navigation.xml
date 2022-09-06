@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/todolist"
+        android:icon="@drawable/todo_ic"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/community"
+        android:icon="@drawable/com_ic"
+        android:iconTint="#ffffff"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/calendar"
+
+        android:icon="@drawable/calendar_ic"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/alarm"
+        android:icon="@drawable/alarm_ic"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/info_ic"
+        tools:ignore="MenuTitle" />
+
+</menu>
