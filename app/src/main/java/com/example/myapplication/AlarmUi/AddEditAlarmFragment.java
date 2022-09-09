@@ -9,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TimePicker;
@@ -33,6 +34,7 @@ public final class AddEditAlarmFragment extends Fragment {
     private TimePicker mTimePicker;
     private EditText mLabel;
     private CheckBox mMon, mTues, mWed, mThurs, mFri, mSat, mSun;
+    private Button allSelectBtn;
 
     public static AddEditAlarmFragment newInstance(Alarm alarm) {
 
@@ -67,10 +69,24 @@ public final class AddEditAlarmFragment extends Fragment {
         mFri = (CheckBox) v.findViewById(R.id.edit_alarm_fri);
         mSat = (CheckBox) v.findViewById(R.id.edit_alarm_sat);
         mSun = (CheckBox) v.findViewById(R.id.edit_alarm_sun);
-
         setDayCheckboxes(alarm);
 
+        allSelectBtn = (Button)v.findViewById(R.id.check_day_all);
+        allSelectBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mMon.setChecked(alarm.getDay(Alarm.MON));
+                mTues.setChecked(alarm.getDay(Alarm.TUES));
+                mWed.setChecked(alarm.getDay(Alarm.WED));
+                mThurs.setChecked(alarm.getDay(Alarm.THURS));
+                mFri.setChecked(alarm.getDay(Alarm.FRI));
+                mSat.setChecked(alarm.getDay(Alarm.SAT));
+                mSun.setChecked(alarm.getDay(Alarm.SUN));
+            }
+        });
+
         return v;
+
     }
 
     @Override
@@ -105,6 +121,8 @@ public final class AddEditAlarmFragment extends Fragment {
         mFri.setChecked(alarm.getDay(Alarm.FRI));
         mSat.setChecked(alarm.getDay(Alarm.SAT));
         mSun.setChecked(alarm.getDay(Alarm.SUN));
+
+
     }
 
     private void save() {

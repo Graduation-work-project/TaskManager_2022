@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:scrollbarStyle="outsideOverlay"
-    android:background="@color/gray2">
+    android:layout_height="wrap_content"
+    android:background="@color/gray2"
+    android:scrollbarStyle="outsideOverlay">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
         android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin">
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
 
         <TextView
-            android:fontFamily="@font/font_bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/list_padding_vertical_small"
+            android:fontFamily="@font/font_bold"
             android:text="@string/time"
             android:textAppearance="?android:attr/textAppearanceLarge"
             tools:text="시간" />
@@ -39,22 +38,22 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:timePickerMode="spinner"
-            android:background="@color/gray2"
-            android:numbersTextColor="@color/white"
-            android:numbersInnerTextColor="@color/white"
+            android:background="@drawable/round_button_2"
             android:numbersBackgroundColor="@color/white"
+            android:numbersInnerTextColor="@color/white"
             android:numbersSelectorColor="@color/white"
+            android:numbersTextColor="@color/white"
+            android:timePickerMode="spinner"
             tools:targetApi="lollipop" />
 
         <TextView
-            android:fontFamily="@font/font_bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_marginBottom="@dimen/list_padding_vertical_small"
+            android:fontFamily="@font/font_bold"
             android:text="@string/label"
-            tools:text="내용"/>
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            tools:text="내용" />
 
         <View
             android:layout_width="match_parent"
@@ -63,26 +62,47 @@
             android:background="@drawable/divider" />
 
         <EditText
-            android:fontFamily="@font/font_light"
             android:id="@+id/edit_alarm_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:backgroundTint="@color/black1"
+            android:fontFamily="@font/font_light"
+            android:hint="@string/add_label_hint"
             android:inputType="textCapWords"
             android:maxLength="15"
             android:textColor="@color/black"
-            android:backgroundTint="@color/black1"
-            android:textStyle="italic"
-            android:hint="@string/add_label_hint"
-            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+            android:textStyle="italic" />
 
-        <TextView
-            android:fontFamily="@font/font_bold"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_marginBottom="@dimen/list_padding_vertical_small"
-            android:text="@string/days"
-            tools:text="요일"/>
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:fontFamily="@font/font_bold"
+                android:text="@string/days"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                tools:text="요일" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/check_day_all"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/black1"
+                android:text="전체 선택"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
 
         <View
             android:layout_width="match_parent"
@@ -96,118 +116,116 @@
             app:columnCount="2">
 
             <TextView
-                android:fontFamily="@font/font_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:fontFamily="@font/font_light"
                 android:text="@string/monday"
+                android:textStyle="bold"
                 tools:text="월요일"
+
                 />
 
             <CheckBox
                 android:id="@+id/edit_alarm_mon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/list_padding_vertical_small"
-                />
+                android:layout_marginBottom="@dimen/list_padding_vertical_small" />
 
             <TextView
-                android:fontFamily="@font/font_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:fontFamily="@font/font_light"
                 android:text="@string/tuesday"
+                android:textStyle="bold"
                 tools:text="화요일"
+
                 />
 
             <CheckBox
                 android:id="@+id/edit_alarm_tues"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/list_padding_vertical_small"
-                />
+                android:layout_marginBottom="@dimen/list_padding_vertical_small" />
 
             <TextView
-                android:fontFamily="@font/font_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:fontFamily="@font/font_light"
                 android:text="@string/wednesday"
-                tools:text="수요일"
-                />
+                android:textStyle="bold"
+                tools:text="수요일" />
 
             <CheckBox
                 android:id="@+id/edit_alarm_wed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/list_padding_vertical_small"
-                />
+                android:layout_marginBottom="@dimen/list_padding_vertical_small" />
 
             <TextView
-                android:fontFamily="@font/font_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:fontFamily="@font/font_light"
                 android:text="@string/thursday"
-                tools:text="목요일"
-                />
+                android:textStyle="bold"
+                tools:text="목요일" />
 
             <CheckBox
                 android:id="@+id/edit_alarm_thurs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/list_padding_vertical_small"
-                />
+                android:layout_marginBottom="@dimen/list_padding_vertical_small" />
 
             <TextView
-                android:fontFamily="@font/font_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:fontFamily="@font/font_light"
                 android:text="@string/friday"
-                tools:text="금요일"
-                />
+                android:textStyle="bold"
+                tools:text="금요일" />
 
             <CheckBox
                 android:id="@+id/edit_alarm_fri"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/list_padding_vertical_small"
-                />
+                android:layout_marginBottom="@dimen/list_padding_vertical_small" />
 
             <TextView
-                android:fontFamily="@font/font_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:fontFamily="@font/font_light"
                 android:text="@string/saturday"
+                android:textStyle="bold"
                 tools:text="토요일"
+
                 />
 
             <CheckBox
                 android:id="@+id/edit_alarm_sat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/list_padding_vertical_small"
-                />
+                android:layout_marginBottom="@dimen/list_padding_vertical_small" />
 
             <TextView
-                android:fontFamily="@font/font_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/list_padding_vertical_small"
+                android:fontFamily="@font/font_light"
                 android:text="@string/sunday"
-                tools:text="일요일"/>
+                android:textStyle="bold"
+                tools:text="일요일" />
 
             <CheckBox
                 android:id="@+id/edit_alarm_sun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/list_padding_vertical_small"
-                />
+                android:layout_marginBottom="@dimen/list_padding_vertical_small" />
+
 
         </androidx.gridlayout.widget.GridLayout>
 
