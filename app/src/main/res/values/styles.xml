@@ -16,6 +16,14 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="AppTheme.NumberPicker" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:colorControlNormal">#ffffff</item>
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="android:fontFamily">@font/font_bold</item>
     </style>
@@ -120,5 +128,7 @@
         <item name="android:fontFamily">@font/font_bold</item>
         <item name="android:windowBackground">@drawable/splash_background</item>
     </style>
+
+
 
 </resources>

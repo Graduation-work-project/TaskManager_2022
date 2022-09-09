@@ -31,19 +31,18 @@
         android:elevation="105dp"
         app:cardElevation="10dp"
         app:cardCornerRadius="10dp"
-
         app:cardUseCompatPadding="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- <ImageView
+         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="130dp"
             android:layout_gravity="center_horizontal"
-            app:srcCompat="@drawable/community" />-->
+            app:srcCompat="@raw/sns"/>
 
         <Button
             android:id="@+id/btn_community"
@@ -93,12 +92,13 @@
             app:layout_constraintTop_toBottomOf="parent"
             app:layout_constraintVertical_bias="0.811" />
 
-        <!-- <ImageView
+         <ImageView
              android:id="@+id/imageView6"
              android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
+             android:layout_height="130dp"
              android:layout_gravity="center"
-             app:srcCompat="@drawable/diary" />-->
+             android:layout_marginBottom="10dp"
+             app:srcCompat="@raw/diary" />
     </androidx.cardview.widget.CardView>
 
 

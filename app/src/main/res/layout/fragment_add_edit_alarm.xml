@@ -33,16 +33,13 @@
             android:background="@drawable/divider" />
 
         <TimePicker
+            android:theme="@style/AppTheme.NumberPicker"
             android:id="@+id/edit_alarm_time_picker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:background="@drawable/round_button_2"
-            android:numbersBackgroundColor="@color/white"
-            android:numbersInnerTextColor="@color/white"
-            android:numbersSelectorColor="@color/white"
-            android:numbersTextColor="@color/white"
             android:timePickerMode="spinner"
             tools:targetApi="lollipop" />
 
@@ -100,6 +97,16 @@
                 android:background="@drawable/round_button"
                 android:backgroundTint="@color/black1"
                 android:text="전체 선택"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/uncheck_day_all"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/black1"
+                android:text="전체 해제"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
         </LinearLayout>

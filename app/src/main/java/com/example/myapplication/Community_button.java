@@ -5,21 +5,33 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.bumptech.glide.Glide;
 import com.example.myapplication.AlarmUi.AlarmActivity;
 import com.example.myapplication.Community_ui.SetUpActivity;
 import com.example.myapplication.Diary.DiaryList;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+
+
 public class Community_button extends AppCompatActivity {
+
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_community_button);
+
+        ImageView sns_gif = (ImageView)findViewById(R.id.imageView7);
+        Glide.with(this).load(R.raw.sns).into(sns_gif);
+
+        ImageView diary_gif = (ImageView)findViewById(R.id.imageView6);
+        Glide.with(this).load(R.raw.diary).into(diary_gif);
 
         //Initialize and assign variable
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);

@@ -21,6 +21,7 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.R;
+import com.example.myapplication.adapter.AlarmsAdapter;
 import com.example.myapplication.data.DatabaseHelper;
 import com.example.myapplication.model.Alarm;
 import com.example.myapplication.service.AlarmReceiver;
@@ -34,7 +35,7 @@ public final class AddEditAlarmFragment extends Fragment {
     private TimePicker mTimePicker;
     private EditText mLabel;
     private CheckBox mMon, mTues, mWed, mThurs, mFri, mSat, mSun;
-    private Button allSelectBtn;
+    private Button allSelectBtn, allunSelectBtn;
 
     public static AddEditAlarmFragment newInstance(Alarm alarm) {
 
@@ -75,19 +76,36 @@ public final class AddEditAlarmFragment extends Fragment {
         allSelectBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mMon.setChecked(alarm.getDay(Alarm.MON));
-                mTues.setChecked(alarm.getDay(Alarm.TUES));
-                mWed.setChecked(alarm.getDay(Alarm.WED));
-                mThurs.setChecked(alarm.getDay(Alarm.THURS));
-                mFri.setChecked(alarm.getDay(Alarm.FRI));
-                mSat.setChecked(alarm.getDay(Alarm.SAT));
-                mSun.setChecked(alarm.getDay(Alarm.SUN));
+                mMon.setChecked(true);
+                mTues.setChecked(true);
+                mWed.setChecked(true);
+                mThurs.setChecked(true);
+                mFri.setChecked(true);
+                mSat.setChecked(true);
+                mSun.setChecked(true);
+
+            }
+        });
+
+        allunSelectBtn = (Button)v.findViewById(R.id.uncheck_day_all);
+        allunSelectBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mMon.setChecked(false);
+                mTues.setChecked(false);
+                mWed.setChecked(false);
+                mThurs.setChecked(false);
+                mFri.setChecked(false);
+                mSat.setChecked(false);
+                mSun.setChecked(false);
+
             }
         });
 
         return v;
 
     }
+
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
