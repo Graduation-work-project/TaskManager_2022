@@ -248,9 +248,6 @@ public class DiaryList extends AppCompatActivity {
                                 @Override
                                 public void onClick(View v) {
                                     try {
-
-
-
                                         //추가해봄
                                         sqLiteHelper.updateData(edtName.getText().toString().trim(),
                                                 edtPrice.getText().toString().trim(),

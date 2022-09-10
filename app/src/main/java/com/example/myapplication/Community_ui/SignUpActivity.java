@@ -49,12 +49,13 @@ public class SignUpActivity extends AppCompatActivity {
                 String email = emailSignUp.getText().toString();
                 String pass = passSignUp.getText().toString();
 
+                //이메일과 비번 비었을 때
                 if (!email.isEmpty() && !pass.isEmpty()){
                     auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()){
-                                Toast.makeText(SignUpActivity.this, "성공적으로 등록되었습니다!!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignUpActivity.this, "환영합니다!", Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(SignUpActivity.this , SetUpActivity2.class));
                                 finish();
                             }else{
@@ -62,7 +63,9 @@ public class SignUpActivity extends AppCompatActivity {
                             }
                         }
                     });
-                }else{
+                }
+                //성공!
+                else{
                     Toast.makeText(SignUpActivity.this, "이메일과 비밀번호를 입력해주세요.", Toast.LENGTH_SHORT).show();
                 }
             }

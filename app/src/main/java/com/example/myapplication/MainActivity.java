@@ -35,7 +35,11 @@ import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
+/*
+1. 로그인-회원가입시 오류 메세지 뜨는걸 한국어로 바꾸고 싶은데 어디서 바꾸는지 도무지 모르겠음..
+2.
 
+* */
 
     private final static int CREATE_EVENT_REQUEST_CODE = 100;
 

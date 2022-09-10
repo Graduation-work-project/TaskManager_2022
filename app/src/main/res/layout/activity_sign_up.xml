@@ -20,7 +20,6 @@
             android:orientation="vertical">
 
             <TextView
-
                 android:fontFamily="@font/font_bold"
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"

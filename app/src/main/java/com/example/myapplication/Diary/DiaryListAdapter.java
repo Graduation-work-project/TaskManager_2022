@@ -51,7 +51,7 @@ public class DiaryListAdapter extends BaseAdapter {
             row = inflater.inflate(layout, null);
 
             holder.txtName = (TextView) row.findViewById(R.id.txtName);
-            holder.txtPrice = (TextView) row.findViewById(R.id.txtPrice);
+            //holder.txtPrice = (TextView) row.findViewById(R.id.txtPrice);
             holder.imageView = (ImageView) row.findViewById(R.id.imgFood);
             row.setTag(holder);
         }
@@ -62,7 +62,7 @@ public class DiaryListAdapter extends BaseAdapter {
         Diary food = foodsList.get(position);
 
         holder.txtName.setText(food.getName());
-        holder.txtPrice.setText(food.getPrice());
+        //holder.txtPrice.setText(food.getPrice());
 
         byte[] foodImage = food.getImage();
         Bitmap bitmap = BitmapFactory.decodeByteArray(foodImage, 0, foodImage.length);

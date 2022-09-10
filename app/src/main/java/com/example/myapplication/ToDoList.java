@@ -109,17 +109,13 @@ public class ToDoList extends AppCompatActivity implements DialogCloseListener {
         Collections.reverse(taskList);
         tasksAdapter.setTasks(taskList);
 
+        //플로팅 버튼 - 추가
         fab2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AddNewTask.newInstance().show(getSupportFragmentManager(), AddNewTask.TAG);
             }
         });
-
-
-
-
-
     }
 
     @Override

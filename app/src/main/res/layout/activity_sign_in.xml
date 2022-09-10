@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:background="@color/black1"
     android:layout_height="match_parent"
-
-    tools:context=".Community_ui.SignUpActivity">
+    tools:context=".Community_ui.SignInActivity">
 
     <ScrollView
         android:layout_width="match_parent"
