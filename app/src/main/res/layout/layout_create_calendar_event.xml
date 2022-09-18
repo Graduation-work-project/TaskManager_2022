@@ -54,12 +54,12 @@
             android:gravity="end">
 
             <TextView
-                android:id="@+id/tv_cancel"
+                android:id="@+id/tv_set"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
                 android:background="@color/black1"
-                android:text="@string/cancel"
+                android:text="@string/ok"
                 android:textColor="@color/white"
                 android:layout_marginHorizontal="2dp"
                 android:textStyle="bold"
@@ -67,11 +67,11 @@
                 android:textAllCaps="true"/>
 
             <TextView
-                android:id="@+id/tv_set"
+                android:id="@+id/tv_cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="20dp"
-                android:text="@string/ok"
+                android:text="@string/cancel"
                 android:layout_marginHorizontal="2dp"
                 android:textColor="@color/white"
                 android:background="@color/black1"

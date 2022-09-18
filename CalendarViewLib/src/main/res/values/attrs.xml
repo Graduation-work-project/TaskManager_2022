@@ -64,22 +64,22 @@
         <attr name="selected_day_background_color" format="color"/>
         <attr name="selected_day_border_color" format="color" />
         <attr name="offset_day" format="enum" >
-            <enum name="Sunday" value="1" />
-            <enum name="Monday" value="2" />
-            <enum name="Tuesday" value="3" />
-            <enum name="Wednesday" value="4" />
-            <enum name="Thursday" value="5" />
-            <enum name="Friday" value="6" />
-            <enum name="Saturday" value="7" />
+            <enum name="일" value="1" />
+            <enum name="월" value="2" />
+            <enum name="화" value="3" />
+            <enum name="수" value="4" />
+            <enum name="목" value="5" />
+            <enum name="금" value="6" />
+            <enum name="토" value="7" />
         </attr>
         <attr name="starting_weekday" format="enum">
-            <enum name="Sunday" value="1" />
-            <enum name="Monday" value="2" />
-            <enum name="Tuesday" value="3" />
-            <enum name="Wednesday" value="4" />
-            <enum name="Thursday" value="5" />
-            <enum name="Friday" value="6" />
-            <enum name="Saturday" value="7" />
+            <enum name="일" value="1" />
+            <enum name="월" value="2" />
+            <enum name="화" value="3" />
+            <enum name="수" value="4" />
+            <enum name="목" value="5" />
+            <enum name="금" value="6" />
+            <enum name="토" value="7" />
         </attr>
     </declare-styleable>
 

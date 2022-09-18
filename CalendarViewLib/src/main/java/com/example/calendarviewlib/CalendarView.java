@@ -53,9 +53,9 @@ public class CalendarView extends FrameLayout {
 
     private static final String TAG = CalendarView.class.getSimpleName();
 
-    private static final String DEFAULT_MIN_DATE = "01/01/1992";
-    private static final String DEFAULT_MAX_DATE = "01/01/2100";
-    private static final String TEMPLATE = "MM/dd/yyyy";
+    private static final String DEFAULT_MIN_DATE = "2000/01/01";
+    private static final String DEFAULT_MAX_DATE = "2100/01/01";
+    private static final String TEMPLATE = "yyyy/MM/dd";
 
     private YMDCalendar mMinDate = new YMDCalendar(
             parseCalendar(DEFAULT_MIN_DATE, TEMPLATE, Locale.getDefault()));

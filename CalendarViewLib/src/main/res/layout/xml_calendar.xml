@@ -24,7 +24,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_2_2"
         app:layout_constraintEnd_toStartOf="@+id/day_item_1_3"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -37,7 +36,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_2_3"
         app:layout_constraintEnd_toStartOf="@+id/day_item_1_4"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -50,7 +48,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_2_4"
         app:layout_constraintEnd_toStartOf="@+id/day_item_1_5"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -63,7 +60,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_2_5"
         app:layout_constraintEnd_toStartOf="@+id/day_item_1_6"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -76,7 +72,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_2_6"
         app:layout_constraintEnd_toStartOf="@+id/day_item_1_7"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -89,7 +84,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_2_7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -104,7 +98,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_3_1"
         app:layout_constraintEnd_toStartOf="@+id/day_item_2_2"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -117,7 +110,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_3_2"
         app:layout_constraintEnd_toStartOf="@+id/day_item_2_3"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -130,7 +122,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_3_3"
         app:layout_constraintEnd_toStartOf="@+id/day_item_2_4"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -143,7 +134,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_3_4"
         app:layout_constraintEnd_toStartOf="@+id/day_item_2_5"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -156,7 +146,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_3_5"
         app:layout_constraintEnd_toStartOf="@+id/day_item_2_6"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -169,7 +158,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_3_6"
         app:layout_constraintEnd_toStartOf="@+id/day_item_2_7"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -182,7 +170,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_3_7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -197,7 +184,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_4_1"
         app:layout_constraintEnd_toStartOf="@+id/day_item_3_2"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -210,7 +196,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_4_2"
         app:layout_constraintEnd_toStartOf="@+id/day_item_3_3"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -223,7 +208,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_4_3"
         app:layout_constraintEnd_toStartOf="@+id/day_item_3_4"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -236,7 +220,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_4_4"
         app:layout_constraintEnd_toStartOf="@+id/day_item_3_5"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -249,7 +232,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_4_5"
         app:layout_constraintEnd_toStartOf="@+id/day_item_3_6"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -262,7 +244,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_4_6"
         app:layout_constraintEnd_toStartOf="@+id/day_item_3_7"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -275,7 +256,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_4_7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -290,7 +270,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_5_1"
         app:layout_constraintEnd_toStartOf="@+id/day_item_4_2"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -303,7 +282,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_5_2"
         app:layout_constraintEnd_toStartOf="@+id/day_item_4_3"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -316,7 +294,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_5_3"
         app:layout_constraintEnd_toStartOf="@+id/day_item_4_4"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -329,7 +306,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_5_4"
         app:layout_constraintEnd_toStartOf="@+id/day_item_4_5"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -342,7 +318,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_5_5"
         app:layout_constraintEnd_toStartOf="@+id/day_item_4_6"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -355,7 +330,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_5_6"
         app:layout_constraintEnd_toStartOf="@+id/day_item_4_7"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -368,7 +342,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_5_7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -383,7 +356,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_6_1"
         app:layout_constraintEnd_toStartOf="@+id/day_item_5_2"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -396,7 +368,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_6_2"
         app:layout_constraintEnd_toStartOf="@+id/day_item_5_3"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -409,7 +380,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_6_3"
         app:layout_constraintEnd_toStartOf="@+id/day_item_5_4"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -422,7 +392,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_6_4"
         app:layout_constraintEnd_toStartOf="@+id/day_item_5_5"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -435,7 +404,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_6_5"
         app:layout_constraintEnd_toStartOf="@+id/day_item_5_6"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -448,7 +416,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_6_6"
         app:layout_constraintEnd_toStartOf="@+id/day_item_5_7"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -461,7 +428,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@+id/day_item_6_7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -476,7 +442,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/day_item_6_2"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -489,7 +454,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/day_item_6_3"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -502,7 +466,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/day_item_6_4"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -515,7 +478,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/day_item_6_5"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -528,7 +490,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/day_item_6_6"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -541,7 +502,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/day_item_6_7"
         app:layout_constraintHorizontal_chainStyle="spread"
@@ -554,7 +514,6 @@
         layout="@layout/xml_grid_item_day"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
