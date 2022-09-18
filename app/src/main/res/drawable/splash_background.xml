@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 <item android:drawable="@drawable/splash_base"/>
-    <item android:top="210dp">
-        <bitmap android:src="@drawable/logo"
+    <item android:top="260dp">
+        <bitmap android:src="@drawable/new_logo"
             android:gravity="top"/>
     </item>
 </layer-list>
