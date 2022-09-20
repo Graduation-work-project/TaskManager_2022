@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="3dp"
             android:textColor="@color/white"
-            tools:text="Get Up"/>
+            tools:text="내용"/>
 
         <TextView
             android:fontFamily="@font/font_light"
