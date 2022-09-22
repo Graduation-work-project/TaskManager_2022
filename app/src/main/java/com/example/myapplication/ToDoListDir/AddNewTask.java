@@ -65,7 +65,7 @@ public class AddNewTask extends BottomSheetDialogFragment {
             newTaskText.setText(task);
             assert task != null;
             if(task.length()>0)
-                newTaskSaveButton.setTextColor(ContextCompat.getColor(getContext(),R.color.design_default_color_primary_dark));
+                newTaskSaveButton.setTextColor(ContextCompat.getColor(getContext(),R.color.white));
         }
 
         db = new DatabaseHandler(getActivity());
