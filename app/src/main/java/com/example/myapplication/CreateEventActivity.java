@@ -313,3 +313,4 @@ public class CreateEventActivity extends AppCompatActivity {
         return Long.toString(System.currentTimeMillis());
     }
 }
+//**
