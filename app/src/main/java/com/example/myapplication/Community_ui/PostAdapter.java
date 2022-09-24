@@ -71,7 +71,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         holder.setPostCaption(post.getCaption());
 
         long milliseconds = post.getTime().getTime();
-        String date  = DateFormat.format("yyyy/dd/MM" , new Date(milliseconds)).toString();
+        String date  = DateFormat.format("yyyy/MM/dd" , new Date(milliseconds)).toString();
         holder.setPostDate(date);
 
         String username = usersList.get(position).getName();
