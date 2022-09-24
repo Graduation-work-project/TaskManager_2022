@@ -87,7 +87,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         holder.likePic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                firestore.collection("Posts/" + postId + "/좋아요").document(currentUserId).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                firestore.collection("Posts/"  + postId + "/좋아요").document(currentUserId).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                        if (!task.getResult().exists()){
