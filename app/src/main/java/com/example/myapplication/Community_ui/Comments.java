@@ -7,7 +7,11 @@ public class Comments extends CommentsId{
         return comment;
     }
 
-    public String getUser() {
+    public String getUser(){
         return user;
     }
+
+    /*public static String getUser() {
+        return user;
+    }*/
 }
