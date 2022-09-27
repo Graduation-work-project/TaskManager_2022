@@ -17,80 +17,74 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
-        <activity android:name=".Community_ui.SetUpActivity2" />
-
         <activity
-            android:exported="true"
             android:name=".LoadingActivity"
+            android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- 메인 -->
+        </activity> <!-- 메인 -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/AppTheme.NoActionBar" >
-
-        </activity>
-
-
-        <activity android:name=".Community"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true"/>
-        <activity android:name=".ToDoList"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true"/>
-
-        <!-- 커뮤니티 -->
-        <activity android:name=".Community_button"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true"/>
-        <activity android:name=".Community_ui.CommentsActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true"/>
-        <activity android:name=".Community_ui.AddPostActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true"/>
-        <activity android:name=".Community_ui.SetUpActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true"/>
-        <activity android:name=".Community_ui.SignInActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true"/>
-        <activity android:name=".Community_ui.SignUpActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Community"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ToDoList"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- 커뮤니티 -->
+        <activity
+            android:name=".Community_button"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Community_ui.CommentsActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Community_ui.AddPostActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Community_ui.SetUpActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Community_ui.SignInActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Community_ui.SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-            android:theme="@style/Base.Theme.AppCompat"
-            android:exported="true"/>
-
-
-
-        <!-- 다이어리 -->
-        <activity android:name=".Diary.Diary_main"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true"/>
+            android:exported="true"
+            android:theme="@style/Base.Theme.AppCompat" /> <!-- 다이어리 -->
+        <activity
+            android:name=".Diary.Diary_main"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Diary.DiaryList"
-            android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"
-            android:label="Diary List" />
-
-        <!-- 알람 -->
-        <activity android:name=".AlarmUi.AlarmActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true"/>
+            android:label="Diary List"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- 알람 -->
+        <activity
+            android:name=".AlarmUi.AlarmActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AlarmUi.AddEditAlarmActivity"
             android:exported="true"
             android:theme="@style/AppTheme" />
         <activity
-            android:exported="true"
             android:name=".AlarmUi.AlarmLandingPageActivity"
+            android:exported="true"
             android:theme="@style/AlertLandingPageTheme" />
 
         <service
@@ -103,13 +97,10 @@
         <receiver
             android:name=".service.BootReceiver"
             android:enabled="true"
-            android:exported="true" />
-
-
-        <!-- 캘린더 -->
+            android:exported="true" /> <!-- 캘린더 -->
         <activity
-            android:exported="true"
             android:name=".CalendarViewWithNotesActivity"
+            android:exported="true"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -117,8 +108,8 @@
                 android:value="com.example.myapplication.MainActivity" />
         </activity>
         <activity
-            android:exported="true"
             android:name=".CalendarViewWithNotesActivitySDK"
+            android:exported="true"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -126,8 +117,8 @@
                 android:value="com.example.myapplication.MainActivity" />
         </activity>
         <activity
-            android:exported="true"
             android:name=".CreateEventActivity"
+            android:exported="true"
             android:parentActivityName=".CalendarViewWithNotesActivitySDK"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -135,8 +126,8 @@
                 android:value="com.example.myapplication.CalendarViewWithNotesActivitySDK" />
         </activity>
         <activity
-            android:exported="true"
             android:name=".SelectDateAndTimeActivity"
+            android:exported="true"
             android:parentActivityName=".CreateEventActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

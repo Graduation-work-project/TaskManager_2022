@@ -1,4 +1,4 @@
-package com.example.myapplication.ToDoListDir;
+package com.example.myapplication.model;
 
 public class ToDoModel {
 

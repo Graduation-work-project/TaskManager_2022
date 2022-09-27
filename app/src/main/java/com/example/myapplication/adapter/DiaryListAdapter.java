@@ -1,4 +1,4 @@
-package com.example.myapplication.Diary;
+package com.example.myapplication.adapter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,6 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.myapplication.Diary.Diary;
 import com.example.myapplication.R;
 
 import java.util.ArrayList;

@@ -12,7 +12,7 @@ import androidx.core.app.ActivityCompat;
 
 
 import com.example.myapplication.data.DatabaseHelper;
-import com.example.myapplication.model.Alarm;
+import com.example.myapplication.model.AlarmModel;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -64,7 +64,7 @@ public final class AlarmUtils {
 
     }
 
-    public static ContentValues toContentValues(Alarm alarm) {
+    public static ContentValues toContentValues(AlarmModel alarm) {
 
         final ContentValues cv = new ContentValues(10);
 
@@ -72,13 +72,13 @@ public final class AlarmUtils {
         cv.put(COL_LABEL, alarm.getLabel());
 
         final SparseBooleanArray days = alarm.getDays();
-        cv.put(COL_MON, days.get(Alarm.MON) ? 1 : 0);
-        cv.put(COL_TUES, days.get(Alarm.TUES) ? 1 : 0);
-        cv.put(COL_WED, days.get(Alarm.WED) ? 1 : 0);
-        cv.put(COL_THURS, days.get(Alarm.THURS) ? 1 : 0);
-        cv.put(COL_FRI, days.get(Alarm.FRI) ? 1 : 0);
-        cv.put(COL_SAT, days.get(Alarm.SAT) ? 1 : 0);
-        cv.put(COL_SUN, days.get(Alarm.SUN) ? 1 : 0);
+        cv.put(COL_MON, days.get(AlarmModel.MON) ? 1 : 0);
+        cv.put(COL_TUES, days.get(AlarmModel.TUES) ? 1 : 0);
+        cv.put(COL_WED, days.get(AlarmModel.WED) ? 1 : 0);
+        cv.put(COL_THURS, days.get(AlarmModel.THURS) ? 1 : 0);
+        cv.put(COL_FRI, days.get(AlarmModel.FRI) ? 1 : 0);
+        cv.put(COL_SAT, days.get(AlarmModel.SAT) ? 1 : 0);
+        cv.put(COL_SUN, days.get(AlarmModel.SUN) ? 1 : 0);
 
         cv.put(DatabaseHelper.COL_IS_ENABLED, alarm.isEnabled());
 
@@ -86,13 +86,13 @@ public final class AlarmUtils {
 
     }
 
-    public static ArrayList<Alarm> buildAlarmList(Cursor c) {
+    public static ArrayList<AlarmModel> buildAlarmList(Cursor c) {
 
         if (c == null) return new ArrayList<>();
 
         final int size = c.getCount();
 
-        final ArrayList<Alarm> alarms = new ArrayList<>(size);
+        final ArrayList<AlarmModel> alarms = new ArrayList<>(size);
 
         if (c.moveToFirst()){
             do {
@@ -109,14 +109,14 @@ public final class AlarmUtils {
                 final boolean sun = c.getInt(c.getColumnIndex(COL_SUN)) == 1;
                 final boolean isEnabled = c.getInt(c.getColumnIndex(COL_IS_ENABLED)) == 1;
 
-                final Alarm alarm = new Alarm(id, time, label);
-                alarm.setDay(Alarm.MON, mon);
-                alarm.setDay(Alarm.TUES, tues);
-                alarm.setDay(Alarm.WED, wed);
-                alarm.setDay(Alarm.THURS, thurs);
-                alarm.setDay(Alarm.FRI, fri);
-                alarm.setDay(Alarm.SAT, sat);
-                alarm.setDay(Alarm.SUN, sun);
+                final AlarmModel alarm = new AlarmModel(id, time, label);
+                alarm.setDay(AlarmModel.MON, mon);
+                alarm.setDay(AlarmModel.TUES, tues);
+                alarm.setDay(AlarmModel.WED, wed);
+                alarm.setDay(AlarmModel.THURS, thurs);
+                alarm.setDay(AlarmModel.FRI, fri);
+                alarm.setDay(AlarmModel.SAT, sat);
+                alarm.setDay(AlarmModel.SUN, sun);
 
                 alarm.setIsEnabled(isEnabled);
 
@@ -137,7 +137,7 @@ public final class AlarmUtils {
         return AM_PM_FORMAT.format(time);
     }
 
-    public static boolean isAlarmActive(Alarm alarm) {
+    public static boolean isAlarmActive(AlarmModel alarm) {
 
         final SparseBooleanArray days = alarm.getDays();
 
@@ -153,17 +153,17 @@ public final class AlarmUtils {
 
     }
 
-    public static String getActiveDaysAsString(Alarm alarm) {
+    public static String getActiveDaysAsString(AlarmModel alarm) {
 
         StringBuilder builder = new StringBuilder("Active Days: ");
 
-        if(alarm.getDay(Alarm.MON)) builder.append("Monday, ");
-        if(alarm.getDay(Alarm.TUES)) builder.append("Tuesday, ");
-        if(alarm.getDay(Alarm.WED)) builder.append("Wednesday, ");
-        if(alarm.getDay(Alarm.THURS)) builder.append("Thursday, ");
-        if(alarm.getDay(Alarm.FRI)) builder.append("Friday, ");
-        if(alarm.getDay(Alarm.SAT)) builder.append("Saturday, ");
-        if(alarm.getDay(Alarm.SUN)) builder.append("Sunday.");
+        if(alarm.getDay(AlarmModel.MON)) builder.append("Monday, ");
+        if(alarm.getDay(AlarmModel.TUES)) builder.append("Tuesday, ");
+        if(alarm.getDay(AlarmModel.WED)) builder.append("Wednesday, ");
+        if(alarm.getDay(AlarmModel.THURS)) builder.append("Thursday, ");
+        if(alarm.getDay(AlarmModel.FRI)) builder.append("Friday, ");
+        if(alarm.getDay(AlarmModel.SAT)) builder.append("Saturday, ");
+        if(alarm.getDay(AlarmModel.SUN)) builder.append("Sunday.");
 
         if(builder.substring(builder.length()-2).equals(", ")) {
             builder.replace(builder.length()-2,builder.length(),".");

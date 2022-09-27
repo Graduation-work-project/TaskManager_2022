@@ -7,7 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.example.myapplication.data.DatabaseHelper;
-import com.example.myapplication.model.Alarm;
+import com.example.myapplication.model.AlarmModel;
 
 
 import java.util.List;
@@ -26,7 +26,7 @@ public class BootReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         if (ACTION_BOOT_COMPLETED.equals(intent.getAction())) {
             Executors.newSingleThreadExecutor().execute(() -> {
-                final List<Alarm> alarms = DatabaseHelper.getInstance(context).getAlarms();
+                final List<AlarmModel> alarms = DatabaseHelper.getInstance(context).getAlarms();
                 setReminderAlarms(context, alarms);
             });
         }

@@ -18,8 +18,8 @@ import com.example.myapplication.ToDoListDir.AddNewTask;
 import com.example.myapplication.ToDoListDir.DatabaseHandler;
 import com.example.myapplication.ToDoListDir.DialogCloseListener;
 import com.example.myapplication.ToDoListDir.RecyclerItemTouchHelper;
-import com.example.myapplication.ToDoListDir.ToDoAdapter;
-import com.example.myapplication.ToDoListDir.ToDoModel;
+import com.example.myapplication.adapter.ToDoAdapter;
+import com.example.myapplication.model.ToDoModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 

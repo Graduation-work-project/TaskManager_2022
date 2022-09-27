@@ -9,9 +9,9 @@ import androidx.annotation.IntDef;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-public final class Alarm implements Parcelable {
+public final class AlarmModel implements Parcelable {
 
-    private Alarm(Parcel in) {
+    private AlarmModel(Parcel in) {
         id = in.readLong();
         time = in.readLong();
         label = in.readString();
@@ -19,15 +19,15 @@ public final class Alarm implements Parcelable {
         isEnabled = in.readByte() != 0;
     }
 
-    public static final Creator<Alarm> CREATOR = new Creator<Alarm>() {
+    public static final Creator<AlarmModel> CREATOR = new Creator<AlarmModel>() {
         @Override
-        public Alarm createFromParcel(Parcel in) {
-            return new Alarm(in);
+        public AlarmModel createFromParcel(Parcel in) {
+            return new AlarmModel(in);
         }
 
         @Override
-        public Alarm[] newArray(int size) {
-            return new Alarm[size];
+        public AlarmModel[] newArray(int size) {
+            return new AlarmModel[size];
         }
     };
 
@@ -64,19 +64,19 @@ public final class Alarm implements Parcelable {
     private SparseBooleanArray allDays;
     private boolean isEnabled;
 
-    public Alarm() {
+    public AlarmModel() {
         this(NO_ID);
     }
 
-    public Alarm(long id) {
+    public AlarmModel(long id) {
         this(id, System.currentTimeMillis());
     }
 
-    public Alarm(long id, long time, @Days int... days) {
+    public AlarmModel(long id, long time, @Days int... days) {
         this(id, time, null, days);
     }
 
-    public Alarm(long id, long time, String label, @Days int... days) {
+    public AlarmModel(long id, long time, String label, @Days int... days) {
         this.id = id;
         this.time = time;
         this.label = label;

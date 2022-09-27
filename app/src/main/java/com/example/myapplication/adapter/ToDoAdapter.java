@@ -1,4 +1,4 @@
-package com.example.myapplication.ToDoListDir;
+package com.example.myapplication.adapter;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,9 +11,11 @@ import android.widget.CompoundButton;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myapplication.MainActivity;
 import com.example.myapplication.R;
 import com.example.myapplication.ToDoList;
+import com.example.myapplication.ToDoListDir.AddNewTask;
+import com.example.myapplication.ToDoListDir.DatabaseHandler;
+import com.example.myapplication.model.ToDoModel;
 
 import java.util.List;
 

@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.example.myapplication.model.Alarm;
+import com.example.myapplication.model.AlarmModel;
 import com.example.myapplication.utils.AlarmUtils;
 
 import java.util.List;
@@ -72,21 +72,21 @@ public final class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     public long addAlarm() {
-        return addAlarm(new Alarm());
+        return addAlarm(new AlarmModel());
     }
 
-    long addAlarm(Alarm alarm) {
+    long addAlarm(AlarmModel alarm) {
         return getWritableDatabase().insert(TABLE_NAME, null, AlarmUtils.toContentValues(alarm));
     }
 
-    public int updateAlarm(Alarm alarm) {
+    public int updateAlarm(AlarmModel alarm) {
         final String where = _ID + "=?";
         final String[] whereArgs = new String[] { Long.toString(alarm.getId()) };
         return getWritableDatabase()
                 .update(TABLE_NAME, AlarmUtils.toContentValues(alarm), where, whereArgs);
     }
 
-    public int deleteAlarm(Alarm alarm) {
+    public int deleteAlarm(AlarmModel alarm) {
         return deleteAlarm(alarm.getId());
     }
 
@@ -96,7 +96,7 @@ public final class DatabaseHelper extends SQLiteOpenHelper {
         return getWritableDatabase().delete(TABLE_NAME, where, whereArgs);
     }
 
-    public List<Alarm> getAlarms() {
+    public List<AlarmModel> getAlarms() {
 
         Cursor c = null;
 

@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.myapplication.R;
 import com.example.myapplication.adapter.AlarmsAdapter;
-import com.example.myapplication.model.Alarm;
+import com.example.myapplication.model.AlarmModel;
 import com.example.myapplication.service.LoadAlarmsReceiver;
 import com.example.myapplication.service.LoadAlarmsService;
 import com.example.myapplication.utils.AlarmUtils;
@@ -79,7 +79,7 @@ public final class AlarmFragment extends Fragment implements LoadAlarmsReceiver.
     }
 
     @Override
-    public void onAlarmsLoaded(ArrayList<Alarm> alarms) {
+    public void onAlarmsLoaded(ArrayList<AlarmModel> alarms) {
         mAdapter.setAlarms(alarms);
     }
 

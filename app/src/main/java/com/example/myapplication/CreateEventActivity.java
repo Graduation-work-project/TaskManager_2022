@@ -5,8 +5,10 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -85,11 +87,14 @@ public class CreateEventActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setResult(RESULT_CANCELED);
+        //activity간 데이터 이동동
+      setResult(RESULT_CANCELED);
 
-        extractDataFromIntentAndInitialize();
+       extractDataFromIntentAndInitialize();
 
-        initializeUI();
+       initializeUI();
+
+
     }
 
     @Override
@@ -291,6 +296,8 @@ public class CreateEventActivity extends AppCompatActivity {
 
         if (action == ACTION_CREATE)
             overridePendingTransition(R.anim.stay, R.anim.slide_out_down);
+
+
 
     }
 

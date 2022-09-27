@@ -7,7 +7,7 @@ import android.content.Intent;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.example.myapplication.data.DatabaseHelper;
-import com.example.myapplication.model.Alarm;
+import com.example.myapplication.model.AlarmModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +30,7 @@ public final class LoadAlarmsService extends IntentService {
     @Override
     protected void onHandleIntent(Intent intent) {
 
-        final List<Alarm> alarms = DatabaseHelper.getInstance(this).getAlarms();
+        final List<AlarmModel> alarms = DatabaseHelper.getInstance(this).getAlarms();
 
         final Intent i = new Intent(ACTION_COMPLETE);
         i.putParcelableArrayListExtra(ALARMS_EXTRA, new ArrayList<>(alarms));

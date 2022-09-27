@@ -1,4 +1,4 @@
-package com.example.myapplication.Community_ui;
+package com.example.myapplication.adapter;
 
 import android.app.Activity;
 import android.app.AlertDialog;

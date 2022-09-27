@@ -1,7 +1,6 @@
 package com.example.myapplication.AlarmUi;
 
 import android.content.DialogInterface;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -17,13 +16,11 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.R;
-import com.example.myapplication.adapter.AlarmsAdapter;
 import com.example.myapplication.data.DatabaseHelper;
-import com.example.myapplication.model.Alarm;
+import com.example.myapplication.model.AlarmModel;
 import com.example.myapplication.service.AlarmReceiver;
 import com.example.myapplication.service.LoadAlarmsService;
 import com.example.myapplication.utils.ViewUtils;
@@ -37,7 +34,7 @@ public final class AddEditAlarmFragment extends Fragment {
     private CheckBox mMon, mTues, mWed, mThurs, mFri, mSat, mSun;
     private Button allSelectBtn, allunSelectBtn;
 
-    public static AddEditAlarmFragment newInstance(Alarm alarm) {
+    public static AddEditAlarmFragment newInstance(AlarmModel alarm) {
 
         Bundle args = new Bundle();
         args.putParcelable(AddEditAlarmActivity.ALARM_EXTRA, alarm);
@@ -55,7 +52,7 @@ public final class AddEditAlarmFragment extends Fragment {
 
         setHasOptionsMenu(true);
 
-        final Alarm alarm = getAlarm();
+        final AlarmModel alarm = getAlarm();
 
         mTimePicker = (TimePicker) v.findViewById(R.id.edit_alarm_time_picker);
         ViewUtils.setTimePickerTime(mTimePicker, alarm.getTime());
@@ -127,25 +124,25 @@ public final class AddEditAlarmFragment extends Fragment {
         return super.onOptionsItemSelected(item);
     }
 
-    private Alarm getAlarm() {
+    private AlarmModel getAlarm() {
         return getArguments().getParcelable(AddEditAlarmActivity.ALARM_EXTRA);
     }
 
-    private void setDayCheckboxes(Alarm alarm) {
-        mMon.setChecked(alarm.getDay(Alarm.MON));
-        mTues.setChecked(alarm.getDay(Alarm.TUES));
-        mWed.setChecked(alarm.getDay(Alarm.WED));
-        mThurs.setChecked(alarm.getDay(Alarm.THURS));
-        mFri.setChecked(alarm.getDay(Alarm.FRI));
-        mSat.setChecked(alarm.getDay(Alarm.SAT));
-        mSun.setChecked(alarm.getDay(Alarm.SUN));
+    private void setDayCheckboxes(AlarmModel alarm) {
+        mMon.setChecked(alarm.getDay(AlarmModel.MON));
+        mTues.setChecked(alarm.getDay(AlarmModel.TUES));
+        mWed.setChecked(alarm.getDay(AlarmModel.WED));
+        mThurs.setChecked(alarm.getDay(AlarmModel.THURS));
+        mFri.setChecked(alarm.getDay(AlarmModel.FRI));
+        mSat.setChecked(alarm.getDay(AlarmModel.SAT));
+        mSun.setChecked(alarm.getDay(AlarmModel.SUN));
 
 
     }
 
     private void save() {
 
-        final Alarm alarm = getAlarm();
+        final AlarmModel alarm = getAlarm();
 
         final Calendar time = Calendar.getInstance();
         time.set(Calendar.MINUTE, ViewUtils.getTimePickerMinute(mTimePicker));
@@ -154,13 +151,13 @@ public final class AddEditAlarmFragment extends Fragment {
 
         alarm.setLabel(mLabel.getText().toString());
 
-        alarm.setDay(Alarm.MON, mMon.isChecked());
-        alarm.setDay(Alarm.TUES, mTues.isChecked());
-        alarm.setDay(Alarm.WED, mWed.isChecked());
-        alarm.setDay(Alarm.THURS, mThurs.isChecked());
-        alarm.setDay(Alarm.FRI, mFri.isChecked());
-        alarm.setDay(Alarm.SAT, mSat.isChecked());
-        alarm.setDay(Alarm.SUN, mSun.isChecked());
+        alarm.setDay(AlarmModel.MON, mMon.isChecked());
+        alarm.setDay(AlarmModel.TUES, mTues.isChecked());
+        alarm.setDay(AlarmModel.WED, mWed.isChecked());
+        alarm.setDay(AlarmModel.THURS, mThurs.isChecked());
+        alarm.setDay(AlarmModel.FRI, mFri.isChecked());
+        alarm.setDay(AlarmModel.SAT, mSat.isChecked());
+        alarm.setDay(AlarmModel.SUN, mSun.isChecked());
 
         final int rowsUpdated = DatabaseHelper.getInstance(getContext()).updateAlarm(alarm);
         final int messageId = (rowsUpdated == 1) ? R.string.update_complete : R.string.update_failed;
@@ -175,7 +172,7 @@ public final class AddEditAlarmFragment extends Fragment {
 
     private void delete() {
 
-        final Alarm alarm = getAlarm();
+        final AlarmModel alarm = getAlarm();
 
         final AlertDialog.Builder builder =
                 new AlertDialog.Builder(getContext(), R.style.DeleteAlarmDialogTheme);

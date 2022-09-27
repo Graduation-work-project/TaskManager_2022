@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
@@ -17,7 +16,7 @@ import android.widget.Toast;
 import com.example.myapplication.AlarmUi.AlarmActivity;
 import com.example.myapplication.Community_ui.AddPostActivity;
 import com.example.myapplication.Community_ui.Post;
-import com.example.myapplication.Community_ui.PostAdapter;
+import com.example.myapplication.adapter.PostAdapter;
 import com.example.myapplication.Community_ui.SetUpActivity;
 import com.example.myapplication.Community_ui.SignInActivity;
 import com.example.myapplication.Community_ui.Users;

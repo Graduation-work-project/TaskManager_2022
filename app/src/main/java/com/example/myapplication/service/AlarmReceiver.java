@@ -18,7 +18,7 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 
 import com.example.myapplication.R;
-import com.example.myapplication.model.Alarm;
+import com.example.myapplication.model.AlarmModel;
 import com.example.myapplication.utils.AlarmUtils;
 
 import java.util.Calendar;
@@ -43,7 +43,7 @@ public final class AlarmReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        final Alarm alarm = intent.getBundleExtra(BUNDLE_EXTRA).getParcelable(ALARM_KEY);
+        final AlarmModel alarm = intent.getBundleExtra(BUNDLE_EXTRA).getParcelable(ALARM_KEY);
         if(alarm == null) {
             Log.e(TAG, "Alarm is null", new NullPointerException());
             return;
@@ -75,7 +75,7 @@ public final class AlarmReceiver extends BroadcastReceiver {
     }
 
     //Convenience method for setting a notification
-    public static void setReminderAlarm(Context context, Alarm alarm) {
+    public static void setReminderAlarm(Context context, AlarmModel alarm) {
 
         //Check whether the alarm is set to run on any days
         if(!AlarmUtils.isAlarmActive(alarm)) {
@@ -102,8 +102,8 @@ public final class AlarmReceiver extends BroadcastReceiver {
         ScheduleAlarm.with(context).schedule(alarm, pIntent);
     }
 
-    public static void setReminderAlarms(Context context, List<Alarm> alarms) {
-        for(Alarm alarm : alarms) {
+    public static void setReminderAlarms(Context context, List<AlarmModel> alarms) {
+        for(AlarmModel alarm : alarms) {
             setReminderAlarm(context, alarm);
         }
     }
@@ -115,7 +115,7 @@ public final class AlarmReceiver extends BroadcastReceiver {
      *              should run
      * @return A Calendar with the actual time of the next alarm.
      */
-    private static Calendar getTimeForNextAlarm(Alarm alarm) {
+    private static Calendar getTimeForNextAlarm(AlarmModel alarm) {
 
         final Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(alarm.getTime());
@@ -142,7 +142,7 @@ public final class AlarmReceiver extends BroadcastReceiver {
 
     }
 
-    public static void cancelReminderAlarm(Context context, Alarm alarm) {
+    public static void cancelReminderAlarm(Context context, AlarmModel alarm) {
 
         final Intent intent = new Intent(context, AlarmReceiver.class);
         final PendingIntent pIntent = PendingIntent.getBroadcast(
@@ -206,7 +206,7 @@ public final class AlarmReceiver extends BroadcastReceiver {
         }
     }
 
-    private static PendingIntent launchAlarmLandingPage(Context ctx, Alarm alarm) {
+    private static PendingIntent launchAlarmLandingPage(Context ctx, AlarmModel alarm) {
         return PendingIntent.getActivity(
                 ctx, alarm.notificationId(), launchIntent(ctx), FLAG_UPDATE_CURRENT
         );
@@ -231,7 +231,7 @@ public final class AlarmReceiver extends BroadcastReceiver {
             return new ScheduleAlarm(am, context);
         }
 
-        void schedule(Alarm alarm, PendingIntent pi) {
+        void schedule(AlarmModel alarm, PendingIntent pi) {
             if(SDK_INT > LOLLIPOP) {
                 am.setAlarmClock(new AlarmManager.AlarmClockInfo(alarm.getTime(), launchAlarmLandingPage(ctx, alarm)), pi);
             } else if(SDK_INT > KITKAT) {

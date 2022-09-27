@@ -17,14 +17,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.AlarmUi.AddEditAlarmActivity;
 import com.example.myapplication.R;
-import com.example.myapplication.model.Alarm;
+import com.example.myapplication.model.AlarmModel;
 import com.example.myapplication.utils.AlarmUtils;
 
 import java.util.List;
 
 public final class AlarmsAdapter extends RecyclerView.Adapter<AlarmsAdapter.ViewHolder> {
 
-    private List<Alarm> mAlarms;
+    private List<AlarmModel> mAlarms;
 
     private String[] mDays;
     private int mAccentColor = -1;
@@ -49,7 +49,7 @@ public final class AlarmsAdapter extends RecyclerView.Adapter<AlarmsAdapter.View
             mDays = c.getResources().getStringArray(R.array.days_abbreviated);
         }
 
-        final Alarm alarm = mAlarms.get(position);
+        final AlarmModel alarm = mAlarms.get(position);
 
         holder.time.setText(AlarmUtils.getReadableTime(alarm.getTime()));
         holder.amPm.setText(AlarmUtils.getAmPm(alarm.getTime()));
@@ -76,7 +76,7 @@ public final class AlarmsAdapter extends RecyclerView.Adapter<AlarmsAdapter.View
         return (mAlarms == null) ? 0 : mAlarms.size();
     }
 
-    private Spannable buildSelectedDays(Alarm alarm) {
+    private Spannable buildSelectedDays(AlarmModel alarm) {
 
         final int numDays = 7;
         final SparseBooleanArray days = alarm.getDays();
@@ -106,7 +106,7 @@ public final class AlarmsAdapter extends RecyclerView.Adapter<AlarmsAdapter.View
 
     }
 
-    public void setAlarms(List<Alarm> alarms) {
+    public void setAlarms(List<AlarmModel> alarms) {
         mAlarms = alarms;
         notifyDataSetChanged();
     }

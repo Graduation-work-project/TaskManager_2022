@@ -4,7 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.example.myapplication.model.Alarm;
+import com.example.myapplication.model.AlarmModel;
 
 import java.util.ArrayList;
 
@@ -21,7 +21,7 @@ public final class LoadAlarmsReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        final ArrayList<Alarm> alarms =
+        final ArrayList<AlarmModel> alarms =
                 intent.getParcelableArrayListExtra(LoadAlarmsService.ALARMS_EXTRA);
         mListener.onAlarmsLoaded(alarms);
     }
@@ -31,7 +31,7 @@ public final class LoadAlarmsReceiver extends BroadcastReceiver {
     }
 
     public interface OnAlarmsLoadedListener {
-        void onAlarmsLoaded(ArrayList<Alarm> alarms);
+        void onAlarmsLoaded(ArrayList<AlarmModel> alarms);
     }
 
 }

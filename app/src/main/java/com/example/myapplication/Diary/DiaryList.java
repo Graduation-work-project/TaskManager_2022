@@ -33,6 +33,7 @@ import com.example.myapplication.MainActivity;
 import com.example.myapplication.R;
 
 import com.example.myapplication.ToDoList;
+import com.example.myapplication.adapter.DiaryListAdapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -54,7 +55,7 @@ public class DiaryList extends AppCompatActivity {
 
     GridView gridView;
     ArrayList<com.example.myapplication.Diary.Diary> list;
-    com.example.myapplication.Diary.DiaryListAdapter adapter = null;
+    DiaryListAdapter adapter = null;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -105,7 +106,7 @@ public class DiaryList extends AppCompatActivity {
 
         gridView = (GridView) findViewById(R.id.gridView);
         list = new ArrayList<>();
-        adapter = new com.example.myapplication.Diary.DiaryListAdapter(this, R.layout.food_items, list);
+        adapter = new DiaryListAdapter(this, R.layout.food_items, list);
         gridView.setAdapter(adapter);
 
         //플로팅 버튼

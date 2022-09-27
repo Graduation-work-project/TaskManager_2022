@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toolbar;
 
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
@@ -12,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication.R;
 import com.example.myapplication.data.DatabaseHelper;
-import com.example.myapplication.model.Alarm;
+import com.example.myapplication.model.AlarmModel;
 import com.example.myapplication.service.LoadAlarmsService;
 
 import java.lang.annotation.Retention;
@@ -39,7 +38,7 @@ public final class AddEditAlarmActivity extends AppCompatActivity {
        // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
        getSupportActionBar().setTitle("알람");
 
-        final Alarm alarm = getAlarm();
+        final AlarmModel alarm = getAlarm();
 
         if(getSupportFragmentManager().findFragmentById(R.id.edit_alarm_frag_container) == null) {
             getSupportFragmentManager()
@@ -50,14 +49,14 @@ public final class AddEditAlarmActivity extends AppCompatActivity {
 
     }
 
-    private Alarm getAlarm() {
+    private AlarmModel getAlarm() {
         switch (getMode()) {
             case EDIT_ALARM:
                 return getIntent().getParcelableExtra(ALARM_EXTRA);
             case ADD_ALARM:
                 final long id = DatabaseHelper.getInstance(this).addAlarm();
                 LoadAlarmsService.launchLoadAlarmsService(this);
-                return new Alarm(id);
+                return new AlarmModel(id);
             case UNKNOWN:
             default:
                 throw new IllegalStateException("Mode supplied as intent extra for " +

@@ -7,6 +7,7 @@
     android:background="@color/gray2">
 
 
+
         <ImageView
             android:id="@+id/imgFood"
             android:layout_width="150dp"
@@ -33,5 +34,6 @@
             android:maxLines="1"
             android:text="제목"
             android:textColor="@color/black"
-            android:textSize="17sp"/>
+            android:textSize="17sp" />
+
 </RelativeLayout>
