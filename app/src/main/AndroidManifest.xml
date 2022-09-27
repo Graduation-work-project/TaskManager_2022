@@ -55,6 +55,10 @@
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".Community_ui.SetUpActivity2"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".Community_ui.SignInActivity"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar" />
