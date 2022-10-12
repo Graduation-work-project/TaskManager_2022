@@ -106,7 +106,7 @@ public class DiaryList extends AppCompatActivity {
 
         gridView = (GridView) findViewById(R.id.gridView);
         list = new ArrayList<>();
-        adapter = new DiaryListAdapter(this, R.layout.food_items, list);
+        adapter = new DiaryListAdapter(this, R.layout.diary_items, list);
         gridView.setAdapter(adapter);
 
         //플로팅 버튼

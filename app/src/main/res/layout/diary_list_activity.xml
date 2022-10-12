@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/gray2">
 
+
     <GridView
         android:id="@+id/gridView"
         android:layout_width="match_parent"
@@ -19,7 +20,6 @@
         android:numColumns="auto_fit"
         android:stretchMode="columnWidth"
         android:verticalSpacing="1dp" />
-
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
