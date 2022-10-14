@@ -19,22 +19,22 @@ public class DiaryListAdapter extends BaseAdapter {
 
     private Context context;
     private  int layout;
-    private ArrayList<Diary> foodsList;
+    private ArrayList<Diary> DiarysList;
 
-    public DiaryListAdapter(Context context, int layout, ArrayList<Diary> foodsList) {
+    public DiaryListAdapter(Context context, int layout, ArrayList<Diary> DiarysList) {
         this.context = context;
         this.layout = layout;
-        this.foodsList = foodsList;
+        this.DiarysList = DiarysList;
     }
 
     @Override
     public int getCount() {
-        return foodsList.size();
+        return DiarysList.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return foodsList.get(position);
+        return DiarysList.get(position);
     }
 
     @Override
@@ -51,21 +51,19 @@ public class DiaryListAdapter extends BaseAdapter {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             row = inflater.inflate(layout, null);
 
-            holder.txtName = (TextView) row.findViewById(R.id.txtName);
-            //holder.txtPrice = (TextView) row.findViewById(R.id.txtPrice);
-            holder.imageView = (ImageView) row.findViewById(R.id.imgFood);
+            holder.txtName = (TextView) row.findViewById(R.id.txtTitle);
+            holder.imageView = (ImageView) row.findViewById(R.id.imgDiary);
             row.setTag(holder);
         }
         else {
             holder = (ViewHolder) row.getTag();
         }
 
-        Diary food = foodsList.get(position);
+        Diary diary = DiarysList.get(position);
 
-        holder.txtName.setText(food.getName());
-        //holder.txtPrice.setText(food.getPrice());
+        holder.txtName.setText(diary.getTitle());
 
-        byte[] foodImage = food.getImage();
+        byte[] foodImage = diary.getImage();
         Bitmap bitmap = BitmapFactory.decodeByteArray(foodImage, 0, foodImage.length);
         holder.imageView.setImageBitmap(bitmap);
 
@@ -74,7 +72,7 @@ public class DiaryListAdapter extends BaseAdapter {
 
     private class ViewHolder{
         ImageView imageView;
-        TextView txtName, txtPrice;
+        TextView txtName;
     }
 
 }

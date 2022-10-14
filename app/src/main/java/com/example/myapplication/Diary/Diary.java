@@ -3,13 +3,13 @@ package com.example.myapplication.Diary;
 //db 적용시 필요한 코드
 public class Diary {
     private int id;
-    private String name;
-    private String price;
+    private String title;
+    private String content;
     private byte[] image;
 
-    public Diary(String name, String price, byte[] image, int id) {
-        this.name = name;
-        this.price = price;
+    public Diary(String title, String content, byte[] image, int id) {
+        this.title = title;
+        this.content = content;
         this.image = image;
         this.id = id;
     }
@@ -22,20 +22,20 @@ public class Diary {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getPrice() {
-        return price;
+    public String getContent() {
+        return content;
     }
 
-    public void setPrice(String price) {
-        this.price = price;
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public byte[] getImage() {

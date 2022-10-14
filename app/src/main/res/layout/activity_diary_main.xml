@@ -24,7 +24,7 @@
 
     <EditText
         android:fontFamily="@font/font_light"
-        android:id="@+id/edtName"
+        android:id="@+id/edtTitle"
         android:layout_width="363dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
@@ -41,10 +41,10 @@
         tools:layout_editor_absoluteY="27dp" />
 
     <EditText
-        android:id="@+id/edtPrice"
+        android:id="@+id/edtContent"
         android:layout_width="349dp"
         android:layout_height="188dp"
-        android:layout_below="@+id/edtName"
+        android:layout_below="@+id/edtTitle"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -68,7 +68,7 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtName"
+        app:layout_constraintTop_toBottomOf="@+id/edtTitle"
         app:srcCompat="@drawable/ic_baseline_add_photo_alternate_24" />
 
     <Button
@@ -101,7 +101,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btnList"
         app:layout_constraintHorizontal_bias="0.267"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPrice" />
+        app:layout_constraintTop_toBottomOf="@+id/edtContent" />
 
     <Button
         android:background="@drawable/round_button_2"
@@ -115,5 +115,5 @@
         android:layout_marginEnd="32dp"
         android:text="지난 기록 보기"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPrice" />
+        app:layout_constraintTop_toBottomOf="@+id/edtContent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -61,6 +61,9 @@
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/round_button_2.xml" value="0.2485" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_add_alarm.xml" value="0.20108695652173914" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_add_post.xml" value="0.24230072463768115" />
+        <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_alarm.xml" value="0.2767210144927536" />
+        <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_alarm_landing_page.xml" value="0.2767210144927536" />
+        <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_alarm_main.xml" value="0.2767210144927536" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_calendar_view_with_notes_sdk.xml" value="0.22192028985507245" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_community.xml" value="0.25" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_diary_main.xml" value="0.1778115501519757" />
@@ -69,11 +72,15 @@
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_sign_up.xml" value="0.24003623188405798" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_to_do_list.xml" value="0.67" />
+        <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/alarm_row.xml" value="0.2767210144927536" />
+        <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/diary_items.xml" value="0.25317028985507245" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/diary_list_activity.xml" value="0.33" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/each_post.xml" value="0.1778115501519757" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/food_items.xml" value="0.22192028985507245" />
+        <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/fragment_add_edit_alarm.xml" value="0.2767210144927536" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/new_task.xml" value="0.22192028985507245" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/task_layout.xml" value="0.22192028985507245" />
+        <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/update_activity.xml" value="0.25317028985507245" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1245" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/mipmap-anydpi-v26/ic_launcher_new.xml" value="0.26" />
         <entry key="..\:/Users/lee/AndroidStudioProjects/TaskManager_2022/app/src/main/res/mipmap-anydpi-v26/ic_launcher_new_round.xml" value="0.26" />

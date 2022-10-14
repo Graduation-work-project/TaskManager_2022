@@ -51,7 +51,6 @@ import static com.example.myapplication.Diary.Diary_main.sqLiteHelper;
 public class DiaryList extends AppCompatActivity {
 
     EditText input;
-    //title : 제목, price : 내용
 
     GridView gridView;
     ArrayList<com.example.myapplication.Diary.Diary> list;
@@ -129,19 +128,19 @@ public class DiaryList extends AppCompatActivity {
             }
         });
 
-        sqLiteHelper = new com.example.myapplication.Diary.SQLiteHelper(this, "FoodDB.sqlite", null, 1);
-        sqLiteHelper.queryData("CREATE TABLE IF NOT EXISTS FOOD(Id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR, price VARCHAR, image BLOB)");
+        sqLiteHelper = new com.example.myapplication.Diary.SQLiteHelper(this, "DiaryDB.sqlite", null, 1);
+        sqLiteHelper.queryData("CREATE TABLE IF NOT EXISTS DIARY(Id INTEGER PRIMARY KEY AUTOINCREMENT, title VARCHAR, content VARCHAR, image BLOB)");
 
         // get all data from sqlite
-        Cursor cursor = sqLiteHelper.getData("SELECT * FROM FOOD");
+        Cursor cursor = sqLiteHelper.getData("SELECT * FROM DIARY");
         list.clear();
         while (cursor.moveToNext()) {
             int id = cursor.getInt(0);
-            String name = cursor.getString(1);
-            String price = cursor.getString(2);
+            String title = cursor.getString(1);
+            String content = cursor.getString(2);
             byte[] image = cursor.getBlob(3);
 
-            list.add(new com.example.myapplication.Diary.Diary(name, price, image, id));
+            list.add(new com.example.myapplication.Diary.Diary(title, content, image, id));
         }
         adapter.notifyDataSetChanged();
 
@@ -166,10 +165,9 @@ public class DiaryList extends AppCompatActivity {
                 date.setText(currentTime);
 
                 //해당 인자에 데이터 가져오기
-                show_title.setText(show.getName());
-                show_content.setText(show.getPrice());
+                show_title.setText(show.getTitle());
+                show_content.setText(show.getContent());
                 show_image.setImageBitmap(getImageFromByte(show.getImage()));
-
 
                 //다시 리스트로 돌아가기
                 btn_close.setOnClickListener(new View.OnClickListener() {
@@ -197,7 +195,7 @@ public class DiaryList extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int item) {
                         if (item == 0) {
                             ArrayList<Integer> arrID = new ArrayList<Integer>();
-                            Cursor c = sqLiteHelper.getData("SELECT id FROM FOOD");
+                            Cursor c = sqLiteHelper.getData("SELECT id FROM DIARY");
                             while (c.moveToNext()) {
                                 arrID.add(c.getInt(0));
                             }
@@ -209,19 +207,19 @@ public class DiaryList extends AppCompatActivity {
                             com.example.myapplication.Diary.Diary update = list.get(position);
 
                             //layout 선언
-                            ImageView imageViewFood = (ImageView) findViewById(R.id.imageViewFood);
-                            final EditText edtName = (EditText) findViewById(R.id.edtName);
-                            final EditText edtPrice = (EditText) findViewById(R.id.edtPrice);
+                            ImageView imageViewDiary = (ImageView) findViewById(R.id.imageViewDiary);
+                            final EditText edtTitle = (EditText) findViewById(R.id.edtTitle);
+                            final EditText edtContent = (EditText) findViewById(R.id.edtContent);
                             Button btnUpdate = (Button) findViewById(R.id.btnUpdate);
 
                             //해당 인자에 데이터 넣기
-                            edtName.setText(update.getName());
-                            edtPrice.setText(update.getPrice());
-                            imageViewFood.setImageBitmap(getImageFromByte(update.getImage()));
+                            edtTitle.setText(update.getTitle());
+                            edtContent.setText(update.getContent());
+                            imageViewDiary.setImageBitmap(getImageFromByte(update.getImage()));
 
                             //커서 맨끝으로 옮기기
-                            edtName.setSelection(edtName.getText().length());
-                            edtPrice.setSelection(edtPrice.getText().length());
+                            edtTitle.setSelection(edtTitle.getText().length());
+                            edtContent.setSelection(edtContent.getText().length());
 
                             //플로팅 버튼
                             Button btnUpdate_bck = findViewById(R.id.btnUpdate_bck);
@@ -236,7 +234,7 @@ public class DiaryList extends AppCompatActivity {
 
 
                             //사진 클릭시 새로 선택하는 함수
-                            imageViewFood.setOnClickListener(new View.OnClickListener() {
+                            imageViewDiary.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
                                     ActivityCompat.requestPermissions(DiaryList.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 888);
@@ -250,24 +248,16 @@ public class DiaryList extends AppCompatActivity {
                                 public void onClick(View v) {
                                     try {
                                         //추가해봄
-                                        sqLiteHelper.updateData(edtName.getText().toString().trim(),
-                                                edtPrice.getText().toString().trim(),
-                                                imageViewToByte(imageViewFood),
+                                        sqLiteHelper.updateData(edtTitle.getText().toString().trim(),
+                                                edtContent.getText().toString().trim(),
+                                                imageViewToByte(imageViewDiary),
                                                 arrID.get(position));
 
-                                        /*UpdateFoodList();
-                                        update.setName(name);
-                                        update.setPrice(price);
-                                        update.setImage(image);*/
 
-                                        String name = edtName.getText().toString();
-                                        String price = edtPrice.getText().toString();
-                                        byte[] image = imageViewToByte(imageViewFood);
+                                        String title = edtTitle.getText().toString();
+                                        String content = edtContent.getText().toString();
+                                        byte[] image = imageViewToByte(imageViewDiary);
 
-
-//                                        sqLiteHelper.updateData(name, price, image, position);
-//                                        list.add(new Diary(name, price, image, position));
-//                                        adapter.notifyDataSetChanged();
 
 
                                         //수정 완료 팝업
@@ -276,16 +266,11 @@ public class DiaryList extends AppCompatActivity {
                                         //다시 리스트로 돌아가기
                                         Intent intent = new Intent(DiaryList.this, DiaryList.class);
 
-
-                                        /*//추가하기
-                                        intent.putExtra("key01", (Parcelable) edtName);
-                                        String edtName;*/
-
                                         startActivity(intent);
                                     } catch (Exception error) {
                                         Log.e("수정이 되지 않았습니다.", error.getMessage());
                                     }
-                                    UpdateFoodList();
+                                    UpdateDiaryList();
 
                                 }
 
@@ -294,7 +279,7 @@ public class DiaryList extends AppCompatActivity {
 
                         } else {
                             // 삭제
-                            Cursor c = sqLiteHelper.getData("SELECT id FROM FOOD");
+                            Cursor c = sqLiteHelper.getData("SELECT id FROM DIARY");
                             ArrayList<Integer> arrID = new ArrayList<Integer>();
                             while (c.moveToNext()) {
                                 arrID.add(c.getInt(0));
@@ -308,10 +293,10 @@ public class DiaryList extends AppCompatActivity {
             }
         });
     }
-    ImageView imageViewFood;
+    ImageView imageViewDiary;
 
     //삭제
-    private void showDialogDelete(final int idFood) {
+    private void showDialogDelete(final int idDiary) {
         final AlertDialog.Builder dialogDelete = new AlertDialog.Builder(DiaryList.this);
 
         dialogDelete.setTitle("주의");
@@ -320,13 +305,13 @@ public class DiaryList extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 try {
-                    sqLiteHelper.deleteData(idFood);
+                    sqLiteHelper.deleteData(idDiary);
                     Toast.makeText(getApplicationContext(), "삭제되었습니다.", Toast.LENGTH_SHORT).show();
                 } catch (Exception e) {
                     Log.e("삭제가 되지 않았습니다.", e.getMessage());
                 }
-                //DeleteFoodList();
-                UpdateFoodList();
+
+                UpdateDiaryList();
             }
         });
 
@@ -340,15 +325,15 @@ public class DiaryList extends AppCompatActivity {
     }
 
     //그리드 뷰 화면에서 없애기
-    private void DeleteFoodList() {
+    private void DeleteDiaryList() {
         // get all data from sqlite
-        Cursor cursor = sqLiteHelper.getData("SELECT * FROM FOOD");
+        Cursor cursor = sqLiteHelper.getData("SELECT * FROM DIARY");
         list.clear();
 
         while (cursor.moveToNext()) {
             int id = cursor.getInt(0);
-            String name = cursor.getString(1);
-            String price = cursor.getString(2);
+            String title = cursor.getString(1);
+            String content = cursor.getString(2);
             byte[] image = cursor.getBlob(3);
 
         }
@@ -356,19 +341,19 @@ public class DiaryList extends AppCompatActivity {
     }
 
     //그리드뷰 화면 수정 받아오기 --> 수정 / 위 코드에서 고쳐보기
-    private void UpdateFoodList() {
+    private void UpdateDiaryList() {
         // get all data from sqlite
 
-        Cursor cursor = sqLiteHelper.getData("SELECT * FROM FOOD");
+        Cursor cursor = sqLiteHelper.getData("SELECT * FROM DIARY");
         list.clear();
 
         while (cursor.moveToNext()) {
             int id = cursor.getInt(0);
-            String name = cursor.getString(1);
-            String price = cursor.getString(2);
+            String title = cursor.getString(1);
+            String content = cursor.getString(2);
             byte[] image = cursor.getBlob(3);
 
-            list.add(new com.example.myapplication.Diary.Diary(name, price, image, id));
+            list.add(new com.example.myapplication.Diary.Diary(title, content, image, id));
         }
         adapter.notifyDataSetChanged();
     }
@@ -397,10 +382,10 @@ public class DiaryList extends AppCompatActivity {
         if (requestCode == 888 && resultCode == RESULT_OK && data != null) {
             Uri uri = data.getData();
             try {
-                ImageView imageViewFood = (ImageView) findViewById(R.id.imageViewFood);
+                ImageView imageViewDiary = (ImageView) findViewById(R.id.imageViewDiary);
                 InputStream inputStream = getContentResolver().openInputStream(uri);
                 Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
-                imageViewFood.setImageBitmap(bitmap);
+                imageViewDiary.setImageBitmap(bitmap);
 
             } catch (FileNotFoundException e) {
                 e.printStackTrace();

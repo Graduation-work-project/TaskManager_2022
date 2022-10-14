@@ -40,7 +40,7 @@ import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
 //추가화면
 public class Diary_main extends AppCompatActivity {
-    EditText edtName, edtPrice;
+    EditText edtTitle, edtContent;
     Button btnChoose, btnAdd, btnList;
     ImageView imageView;
 
@@ -98,9 +98,9 @@ public class Diary_main extends AppCompatActivity {
 
         init();
 
-        sqLiteHelper = new com.example.myapplication.Diary.SQLiteHelper(this, "FoodDB.sqlite", null, 1);
+        sqLiteHelper = new com.example.myapplication.Diary.SQLiteHelper(this, "DiaryDB.sqlite", null, 1);
 
-        sqLiteHelper.queryData("CREATE TABLE IF NOT EXISTS FOOD(Id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR, price VARCHAR, image BLOB)");
+        sqLiteHelper.queryData("CREATE TABLE IF NOT EXISTS DIARY(Id INTEGER PRIMARY KEY AUTOINCREMENT, title VARCHAR, content VARCHAR, image BLOB)");
 
         //갤러리에서 사진 가져오기
         btnChoose.setOnClickListener(new View.OnClickListener() {
@@ -120,8 +120,8 @@ public class Diary_main extends AppCompatActivity {
             public void onClick(View view) {
                 try{
                     sqLiteHelper.insertData(
-                            edtName.getText().toString().trim(),
-                            edtPrice.getText().toString().trim(),
+                            edtTitle.getText().toString().trim(),
+                            edtContent.getText().toString().trim(),
                             imageViewToByte(imageView)
                     );
                     Intent intent = new Intent(Diary_main.this, DiaryList.class);
@@ -209,8 +209,8 @@ public class Diary_main extends AppCompatActivity {
 
 
     private void init(){
-        edtName = (EditText) findViewById(R.id.edtName);
-        edtPrice = (EditText) findViewById(R.id.edtPrice);
+        edtTitle = (EditText) findViewById(R.id.edtTitle);
+        edtContent = (EditText) findViewById(R.id.edtContent);
         btnChoose = (Button) findViewById(R.id.btnChoose);
         btnAdd = (Button) findViewById(R.id.btnAdd);
         btnList = (Button) findViewById(R.id.btnList);

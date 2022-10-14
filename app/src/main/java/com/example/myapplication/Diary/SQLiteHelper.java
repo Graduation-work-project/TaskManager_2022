@@ -6,6 +6,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteStatement;
 
+/*주석 확인 후 문제 없으면 삭제
+    기존 name->title, price->content 로 변경
+    안되는 부분 있으면 참고
+* */
+
+
+
 public class SQLiteHelper extends SQLiteOpenHelper {
 
     public Diary insertData;
@@ -19,28 +26,29 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         database.execSQL(sql);
     }
 
-    public void insertData(String name, String price, byte[] image){
+    public void insertData(String title, String content, byte[] image){
         SQLiteDatabase database = getWritableDatabase();
-        String sql = "INSERT INTO FOOD VALUES (NULL, ?, ?, ?)";
+
+        String sql = "INSERT INTO DIARY VALUES (NULL, ?, ?, ?)";
 
         SQLiteStatement statement = database.compileStatement(sql);
         statement.clearBindings();
 
-        statement.bindString(1, name);
-        statement.bindString(2, price);
+        statement.bindString(1, title);
+        statement.bindString(2, content);
         statement.bindBlob(3, image);
 
         statement.executeInsert();
     }
 
-    public void updateData(String name, String price, byte[] image, int id) {
+    public void updateData(String title, String content, byte[] image, int id) {
         SQLiteDatabase database = getWritableDatabase();
 
-        String sql = "UPDATE FOOD SET name = ?, price = ?, image = ? WHERE id = ?";
+        String sql = "UPDATE DIARY SET title = ?, content = ?, image = ? WHERE id = ?";
         SQLiteStatement statement = database.compileStatement(sql);
 
-        statement.bindString(1, name);
-        statement.bindString(2, price);
+        statement.bindString(1, title);
+        statement.bindString(2, content);
         statement.bindBlob(3, image);
         statement.bindDouble(4, (double)id);
 
@@ -51,7 +59,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     public  void deleteData(int id) {
         SQLiteDatabase database = getWritableDatabase();
 
-        String sql = "DELETE FROM FOOD WHERE id = ?";
+        String sql = "DELETE FROM DIARY WHERE id = ?";
         SQLiteStatement statement = database.compileStatement(sql);
         statement.clearBindings();
         statement.bindDouble(1, (double)id);
