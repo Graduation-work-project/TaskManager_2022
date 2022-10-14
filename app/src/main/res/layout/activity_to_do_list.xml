@@ -31,7 +31,7 @@
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/font_light"
         android:text="수정은 왼쪽, 삭제는 오른쪽으로 슬라이드 해주세요."
-        android:textColor="@android:color/black"
+        android:textColor="#6A6A6A"
         android:textSize="15sp" />
 
     <androidx.recyclerview.widget.RecyclerView
