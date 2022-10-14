@@ -1,8 +1,5 @@
 <resources>
     <string name="app_name" translatable="false">Task Manager</string>
-    <string name="title_activity_simple_calendar_view" translatable="false">Task Manager</string>
-    <string name="title_activity_mini_calendar_view_popup" translatable="false">Task Manager</string>
-    <string name="today">today</string>
     <string name="cancel">취소</string>
     <string name="ok">확인</string>
     <string name="new_event">일정</string>
@@ -22,7 +19,6 @@
     <string name="days">요일</string>
     <string name="edit_alarm">알람 수정하기</string>
     <string name="add_alarm">알람 추가하기</string>
-    <string name="add_label_hint">내용을 추가하세요!</string>
     <string name="update_complete">등록되었습니다.</string>
     <string name="update_failed">등록에 실패하였습니다.</string>
     <string name="delete_complete">알람이 삭제되었습니다.</string>
@@ -33,7 +29,6 @@
     <string name="no">아니요</string>
 
     <!-- Edit Alarm Menu -->
-    <string name="empty_view_text">Press the Floating Action Button to add an alarm!</string>
 
     <string name="action_save">Save</string>
     <string name="action_delete">Delete</string>
@@ -62,7 +57,6 @@
     <string name="already_registered">로그인으로 돌아가기</string>
     <string name="sign_in">로그인</string>
     <string name="not_registered">회원가입</string>
-    <string name="profile">내 프로필</string>
     <string name="sign_out">로그아웃</string>
     <string name="username">이름을 입력하세요.</string>
     <!--<string name="save">Save</string>-->

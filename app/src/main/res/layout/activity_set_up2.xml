@@ -81,7 +81,6 @@
 
     <TextView
         android:fontFamily="@font/font_bold"
-        android:id="@+id/info_message"
         android:layout_width="302dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
