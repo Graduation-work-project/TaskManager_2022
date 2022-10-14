@@ -14,7 +14,7 @@
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/font_light"
         android:text="꾹 눌러 삭제, 수정 해주세요."
-        android:textColor="@android:color/black"
+        android:textColor="#434242"
         android:textSize="17sp" />
 
     <GridView
