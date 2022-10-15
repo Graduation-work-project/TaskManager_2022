@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/splash_background.xml" value="0.276" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/splash_base.xml" value="0.276" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/fragment_add_edit_alarm.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/list_item_calendar_event.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/list_item_color.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/new_task.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/pager_calendar_day.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/task_layout.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/update_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/drawable-v24/ic_baseline_edit.xml" value="0.1785" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/drawable/after_liked.xml" value="0.305" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/drawable/alarm_ic.xml" value="0.305" />
