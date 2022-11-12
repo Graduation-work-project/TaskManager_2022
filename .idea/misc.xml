@@ -3,8 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable-v24/ic_back.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable-v24/ic_baseline_add.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable-v24/ic_baseline_delete.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/after_liked.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/alarm_ic.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/alarm_ic_fix.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/background_community.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/before_liked.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/com_ic.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/diary_icfix.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/divider.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/ic_alarm_white.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/ic_baseline_add_photo_alternate_24.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/ic_community.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/info_button_background_todo.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/info_ic.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/round_button.xml" value="0.292" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/splash_background.xml" value="0.276" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/splash_base.xml" value="0.276" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/square_button.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/todo_ic.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/todo_ic3fix.xml" value="0.292" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/fragment_add_edit_alarm.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/list_item_calendar_event.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/list_item_color.xml" value="0.36614583333333334" />
@@ -12,6 +34,9 @@
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/pager_calendar_day.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/task_layout.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/update_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2135" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/mipmap-anydpi-v26/ic_launcher_new.xml" value="0.2135" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/mipmap-anydpi-v26/ic_launcher_new_round.xml" value="0.2135" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/drawable-v24/ic_baseline_edit.xml" value="0.1785" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/drawable/after_liked.xml" value="0.305" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/summer_0905_2/app/src/main/res/drawable/alarm_ic.xml" value="0.305" />
