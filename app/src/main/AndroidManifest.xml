@@ -150,6 +150,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.myapplication.CreateEventActivity" />
         </activity>
+
+        <!--튜토리얼-->
+        <activity android:name=".TutorialActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

@@ -27,6 +27,7 @@ import com.example.myapplication.Community_button;
 import com.example.myapplication.MainActivity;
 import com.example.myapplication.R;
 import com.example.myapplication.ToDoList;
+import com.example.myapplication.TutorialActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -80,7 +81,6 @@ public class SetUpActivity2 extends AppCompatActivity {
         mSaveBtn = findViewById(R.id.save_btn2);
 
         auth = FirebaseAuth.getInstance();
-
 
 
         //시작
@@ -162,7 +162,7 @@ public class SetUpActivity2 extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     progressBar.setVisibility(View.INVISIBLE);
                     Toast.makeText(SetUpActivity2.this, "저장되었습니다!", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(SetUpActivity2.this, MainActivity.class));
+                    startActivity(new Intent(SetUpActivity2.this, TutorialActivity.class));
                     finish();
                 } else {
                     progressBar.setVisibility(View.INVISIBLE);

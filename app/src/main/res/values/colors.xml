@@ -15,5 +15,44 @@
     <color name="black1">#1C252E</color>
     <color name="gray2">#F0EFED</color>
 
+    <!--튜토리얼-->
+
+    <!-- 배경색-->
+    <color name="bg_screen1">#1C252E</color>
+    <color name="bg_screen2">#1C252E</color>
+    <color name="bg_screen3">#1C252E</color>
+    <color name="bg_screen4">#1C252E</color>
+    <color name="bg_screen5">#1C252E</color>
+
+    <!-- 선택되지 않은 점(선택 되지 않은 페이지 점) -->
+    <color name="dot_dark_screen1">#0C1013</color>
+    <color name="dot_dark_screen2">#0C1013</color>
+    <color name="dot_dark_screen3">#0C1013</color>
+    <color name="dot_dark_screen4">#0C1013</color>
+    <color name="dot_dark_screen5">#0C1013</color>
+
+    <!-- 선택된 점(해당 페이지 일 때) -->
+    <color name="dot_light_screen1">#FFFFFFFF</color>
+    <color name="dot_light_screen2">#FFFFFFFF</color>
+    <color name="dot_light_screen3">#FFFFFFFF</color>
+    <color name="dot_light_screen4">#FFFFFFFF</color>
+    <color name="dot_light_screen5">#FFFFFFFF</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen5</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+    </array>
+
 </resources>
 
