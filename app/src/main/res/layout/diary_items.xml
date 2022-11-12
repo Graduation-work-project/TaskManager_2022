@@ -27,7 +27,7 @@
             android:layout_below="@+id/imgDiary"
             android:layout_alignRight="@+id/imgDiary"
             android:layout_marginLeft="7dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="0dp"
             android:ems="5"
             android:fontFamily="@font/font_bold"

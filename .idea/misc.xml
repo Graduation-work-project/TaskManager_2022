@@ -27,10 +27,36 @@
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/square_button.xml" value="0.292" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/todo_ic.xml" value="0.292" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/drawable/todo_ic3fix.xml" value="0.292" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_add_post.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_alarm_landing_page.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_alarm_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_calendar_view_with_notes.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_comments.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_community.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_create_event.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_diary_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_edit_alarm.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_set_up.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_set_up2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_show.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_sign_in.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_sign_up.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_to_do_list.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/activity_tutorial.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/alarm_row.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/dialog_calendar.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/dialog_select_color.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/diary_items.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/diary_list_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/each_comment.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/each_post.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/fragment_add_edit_alarm.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/fragment_main_alarm.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/layout_create_calendar_event.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/list_item_calendar_event.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/list_item_color.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/new_task.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/number_picker_with_selector_wheel.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/pager_calendar_day.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/task_layout.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TaskManager_2022/app/src/main/res/layout/update_activity.xml" value="0.36614583333333334" />
