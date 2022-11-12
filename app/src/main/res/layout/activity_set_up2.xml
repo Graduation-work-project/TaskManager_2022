@@ -78,21 +78,19 @@
         android:indeterminateTint="@color/black1"/>
 
 
-
     <TextView
-        android:fontFamily="@font/font_bold"
         android:layout_width="302dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
-        android:text="이름과 사진을 등록해주세요!"
+        android:fontFamily="@font/font_bold"
         android:gravity="center"
+        android:text="상단 아이콘을 눌러 사진을 추가해주세요."
         android:textColor="#8A8A8A"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/save_btn2" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -40,7 +40,7 @@
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
-                android:layout_height="270dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -53,13 +53,12 @@
 
 
             <EditText
-
                 android:fontFamily="@font/font_bold"
                 android:id="@+id/sign_in_email"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="70dp"
                 android:backgroundTint="@color/white"
                 android:layout_gravity="center"
                 android:textStyle="bold"
