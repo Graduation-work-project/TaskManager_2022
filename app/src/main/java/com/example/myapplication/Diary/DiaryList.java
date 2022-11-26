@@ -402,4 +402,5 @@ public class DiaryList extends AppCompatActivity {
         startActivity(intent);  //인텐트 이동
         finish();   //현재 액티비티 종료
     }
+
 }

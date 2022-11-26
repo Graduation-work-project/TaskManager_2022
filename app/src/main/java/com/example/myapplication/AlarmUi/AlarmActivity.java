@@ -36,18 +36,18 @@ public class AlarmActivity extends AppCompatActivity {
                     case R.id.todolist:
                         startActivity(new Intent(getApplicationContext()
                                 , ToDoList.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.community:
                         startActivity(new Intent(getApplicationContext()
                                 , Community_button.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(0, 0);
                         return true;
 
                     case R.id.calendar:
                         startActivity(new Intent(getApplicationContext()
                                 , MainActivity.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(0, 0);
 
                         return true;
                     case R.id.alarm:
@@ -56,7 +56,7 @@ public class AlarmActivity extends AppCompatActivity {
                     case R.id.info:
                         startActivity(new Intent(getApplicationContext()
                                 , SetUpActivity.class));
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(0, 0);
                         return true;
                 }
                 return false;
@@ -72,8 +72,4 @@ public class AlarmActivity extends AppCompatActivity {
         startActivity(intent);  //인텐트 이동
         finish();   //현재 액티비티 종료
     }
-
-
-
-
 }
