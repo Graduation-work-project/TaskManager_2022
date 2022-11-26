@@ -18,7 +18,6 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:alpha="1"
-
         app:srcCompat="@drawable/ic_alarm_white"
         android:scaleType="fitCenter"/>
 
