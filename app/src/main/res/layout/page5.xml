@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         android:text="알람을 추가하여 일정을 기억하세요."
         android:textSize="17dp"
         android:textColor="@color/white">
@@ -23,7 +23,7 @@
         android:layout_width="400dp"
         android:layout_height="550dp"
         android:src="@drawable/page5"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="70dp">
     </ImageView>
 
