@@ -80,7 +80,8 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:exported="true"
-            android:theme="@style/Base.Theme.AppCompat" /> <!-- 다이어리 -->
+            android:theme="@style/Base.Theme.AppCompat" />
+        <!-- 다이어리 -->
         <activity
             android:name=".Diary.Diary_main"
             android:exported="true"
