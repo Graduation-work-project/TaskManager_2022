@@ -25,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
+
         android:orientation="horizontal"
         android:gravity="fill">
 
@@ -37,6 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="돌아가기"
+            android:layout_marginBottom="70dp"
             tools:text="알람 설정"
             android:layout_marginHorizontal="2dp"
             android:fontFamily="@font/font_light"
