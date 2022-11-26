@@ -30,19 +30,19 @@
         android:gravity="fill">
 
         <Button
-            android:background="@drawable/round_button"
-            android:textColor="@color/black"
-            android:textStyle="bold"
             android:id="@+id/load_main_activity_btn"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="돌아가기"
-            android:layout_marginBottom="70dp"
-            tools:text="돌아가기"
             android:layout_marginHorizontal="2dp"
+            android:layout_marginBottom="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
             android:fontFamily="@font/font_light"
-            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored" />
+            android:text="알람 설정"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:text="알람 설정" />
 
         <Button
             android:id="@+id/dismiss_btn"
