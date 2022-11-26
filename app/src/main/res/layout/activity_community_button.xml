@@ -51,23 +51,23 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="230dp"
         android:layout_marginRight="10dp"
         android:elevation="105dp"
-        app:cardElevation="10dp"
         app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
         app:cardUseCompatPadding="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-         <ImageView
+        <ImageView
             android:id="@+id/imageView7"
             android:layout_width="wrap_content"
             android:layout_height="130dp"
             android:layout_gravity="center_horizontal"
-            app:srcCompat="@raw/sns"/>
+            app:srcCompat="@raw/sns" />
 
         <Button
             android:id="@+id/btn_community"
@@ -90,16 +90,18 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="32dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="60dp"
         android:elevation="105dp"
         app:cardCornerRadius="10dp"
-        app:cardUseCompatPadding="true"
         app:cardElevation="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
         <Button
             android:id="@+id/btn_diary"
@@ -117,13 +119,13 @@
             app:layout_constraintTop_toBottomOf="parent"
             app:layout_constraintVertical_bias="0.811" />
 
-         <ImageView
-             android:id="@+id/imageView6"
-             android:layout_width="wrap_content"
-             android:layout_height="130dp"
-             android:layout_gravity="center"
-             android:layout_marginBottom="10dp"
-             app:srcCompat="@raw/diary" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@raw/diary" />
     </androidx.cardview.widget.CardView>
 
 
