@@ -72,25 +72,34 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-            <EditText
-                android:id="@+id/sing_in_pass"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="@color/white"
-                android:layout_gravity="center"
-                android:ems="10"
-                android:hint="@string/enter_pass"
-                android:fontFamily="@font/font_bold"
-                android:inputType="textPassword"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textColorHint="@android:color/darker_gray"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sign_in_email" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@android:color/darker_gray"
+                android:textColorHint="@android:color/darker_gray">
+
+
+                <EditText
+                    android:id="@+id/sing_in_pass"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:hint="@string/enter_pass"
+                    android:fontFamily="@font/font_bold"
+                    android:inputType="textPassword"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textColorHint="@android:color/darker_gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sign_in_email" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:fontFamily="@font/font_light"
