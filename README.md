@@ -12,17 +12,18 @@
 
 ---
 
-## 🛠 사용 기술
+## 🛠 기술 스택
 
-| 분야 | 기술 스택 |
-|------|-----------|
-| Language | Java, JavaScript |
-| Framework | Spring MVC |
-| Front-End | JSP, HTML5, CSS3, Bootstrap, jQuery |
-| Back-End | Java (Spring), Servlet, JSP |
-| DB | MySQL |
-| Build/Deploy | Apache Tomcat, Maven |
-| 기타 | GitHub, Eclipse, VS Code |
+| 분야           | 기술 스택                                                                |
+|----------------|---------------------------------------------------------------------------|
+| Language       | Java                                                                      |
+| IDE            | Android Studio                                                            |
+| UI 구성        | XML Layout, ConstraintLayout, RecyclerView                                |
+| 백엔드 / DB    | Firebase Authentication, Firebase Realtime Database                       |
+| 기능 구현      | AlarmManager, SharedPreferences, Intent                                   |
+| 버전 관리      | Git, GitHub                                                               |
+| 기타           | Firebase Console, AndroidManifest.xml, Vector Assets 등                  |
+
 
 ---
 
