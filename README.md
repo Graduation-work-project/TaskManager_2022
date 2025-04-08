@@ -43,7 +43,7 @@
 - 다중 알람 저장 및 알림 기능
 - 직관적인 리스트 UI 구성
 
-![alarm]()
+![alarm](./images/Alarm.png.png)
 
 ---
 
@@ -52,7 +52,7 @@
 - 슬라이드 제스처로 수정/삭제
 - 완료/미완료 상태 시각적 구분
 
-![todo]()
+![todo](./images/Todo.png.png)
 
 ---
 
@@ -61,7 +61,7 @@
 - 좋아요 및 댓글 기능 포함
 - 사용자 간 소통 기능 제공
 
-![community](./images/community.png)
+![community](./images/Commu.png.png)
 
 
 ---
