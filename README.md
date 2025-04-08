@@ -34,7 +34,7 @@
 - 날짜별 일정 시각화 (색상 표시)
 - 일정 등록, 수정, 삭제 기능
 
-![calendar]()
+![calendar](./images/Calendar.png.png)
 
 ---
 
